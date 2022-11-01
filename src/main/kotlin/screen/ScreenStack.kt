@@ -7,7 +7,7 @@ object ScreenStack { // ScreenStack도 프로그램 전체제서 관리하는 �
         screenStack.add(screen)
     }
 
-    fun pop(){
+    fun pop(){ // 현재 화면에서 벗어나기
         screenStack.removeLastOrNull()
     }
 

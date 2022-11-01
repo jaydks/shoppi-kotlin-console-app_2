@@ -19,8 +19,8 @@ class ShoppingCategory : Screen() {
         } else {
 
             if (categories.contains(selectedCategory)){
-                val shoppingProductList = ShoppingProductList()
-                shoppingProductList.showProduct(selectedCategory)
+                val shoppingProductList = ShoppingProductList(selectedCategory)
+                shoppingProductList.showProduct()
             }else{
                 showErrorMessage(selectedCategory)
             }
